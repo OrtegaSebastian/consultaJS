@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Segunda entrega</title>
+</head>
+<body>
+    <h1 class="col-md-7">Bienvenido</h1>
+    <h5 class="col-md-7">Digite su nombre de producto, cantidad, precio e imagen para agregar al stock</h5>
+    <div class="container py-2">
+    <form>
+    <input id="nombre" type="text" placeholder="Nombre Producto" class= "form-control my-2">
+    <input id="cantidad" type="number" placeholder="Cantidad" class= "form-control my-2">
+    <input id="precio" type="number" placeholder="precio" class= "form-control my-2">
+    <input id="url" type="text" placeholder="Url del producto" class= "form-control my-2">
+    <button id="boton" class="btn btn-success" type="reset" onclick="capturar();">Agregar</button>
+    </form>
+    <hr>
+    </div>
+    <div class="responsive" style="overflow-y: scroll; height:400px;">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">    
+              <h3>Stock</h3>  
+                <tr>
+                    <th></th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead> 
+        </table>
+    </div>
+    <hr>
+    </form>
+    <form>
+        <h3  class="col-10">Productos disponibles:</h3>
+        <select  class="my-2" id="seleccionProducto" onchange="getComboA(this)">
+          <optgroup label = "Elija un producto">
+        </select>
+        <input id="productoComprado" type="text" placeholder="Nombre Producto" class= "form-control my-2" readonly>
+        <input id="cantidadComprada" type="number" placeholder="Cantidad" class= "form-control my-2">
+        <button id="boton" class="btn btn-success" type="reset" onclick="cargarCarrito();">Agregar</button>
+        </form>
+        <div class="container">
+            <h3>Carrito:</h3>
+            <table class="table" id="carrito">
+            <thead class="thead-inverse">    
+              <tr>
+                <th>Producto</th>  
+                <th>Cantidad</th>
+                <th>Total</th>     
+                <th></th>
+              </tr>
+            </thead> 
+            </table>
+            <hr>
+            <h3>Total Comprado:</h3>
+            <input id="total" type="text" placeholder="Total" class= "form-control my-2" value=0 readonly>
+            <input type="button" value="Actualizar" onclick="location.reload()"/>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./js/utils.js"></script>
+</html>

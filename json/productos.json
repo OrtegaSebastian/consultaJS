@@ -1,0 +1,44 @@
+[
+    {
+      "producto": "Leche",
+      "cantidad": "80",
+      "precioUnitario": "5",
+      "urlFoto":"./assets/pictures/leche.jpeg"
+    },
+    {
+      "producto": "Huevos",
+      "cantidad": 10,
+      "precioUnitario": 15,
+      "urlFoto":"./assets/pictures/huevos.jpeg"
+    },
+    {
+      "producto": "Pan",
+      "cantidad": 20,
+      "precioUnitario": 100,
+      "urlFoto":"./assets/pictures/pan.jpeg"
+    },
+    {
+      "producto": "Aceite",
+      "cantidad": 30,
+      "precioUnitario": 150,
+      "urlFoto":"./assets/pictures/aceite.jpeg"
+    },
+    {
+      "producto": "Sal",
+      "cantidad": 50,
+      "precioUnitario": 60,
+      "urlFoto":"./assets/pictures/sal.jpeg"
+    },
+    {
+      "producto": "Azucar",
+      "cantidad": 40,
+      "precioUnitario": 90,
+      "urlFoto":"./assets/pictures/azucar.jpeg"
+    },
+    {
+      "producto": "Tomate",
+      "cantidad": 30,
+      "precioUnitario": 200,
+      "urlFoto":"./assets/pictures/tomate.jpeg"
+    }
+  ]
